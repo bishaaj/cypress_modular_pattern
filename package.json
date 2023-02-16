@@ -1,0 +1,19 @@
+{
+  "name": "rules",
+  "version": "1.0.0",
+  "description": "e2e testing of Epic ReactJS UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "testRunner": "npx cypress open"
+  },
+  "author": "Josh Ayoade",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.5.1"
+  },
+  "dependencies": {
+    "cypress-real-events": "^1.7.6",
+    "cypress-xpath": "^2.0.1"
+  }
+}

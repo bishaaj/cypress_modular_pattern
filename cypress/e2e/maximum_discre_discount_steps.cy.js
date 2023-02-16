@@ -1,0 +1,30 @@
+import { MaximumDiscreDiscountPage } from "../page/maximum_discre_discount_page";
+const maximumDiscreDiscountPage = new MaximumDiscreDiscountPage()
+
+it('Create Minimum Premium rules with Email condition', () => {
+    maximumDiscreDiscountPage.verify_that_rules_engine_title_is_display()
+    maximumDiscreDiscountPage.login_into_ui_tenant_from_developers_login()
+    maximumDiscreDiscountPage.click_on_add_rule_button_to_create_new_rule()
+    maximumDiscreDiscountPage.select_ukMotors_from_question_set_dropdown()
+    maximumDiscreDiscountPage.select_maximum_discretionary_discount_from_rule_type_dropdown()
+    maximumDiscreDiscountPage.set_maximum_discretionary_discount_rule_name()
+    maximumDiscreDiscountPage.set_maximum_discretionary_discount_value()
+    maximumDiscreDiscountPage.set_email_rule_condition_from_conditional_builder_Field1()
+    maximumDiscreDiscountPage.set_rule_condition_from_conditional_builder_Field2()
+    maximumDiscreDiscountPage.set_maximum_discretionary_discount_answer()
+    maximumDiscreDiscountPage.click_on_save_rule_button()
+})
+
+// it('Create Minimum Premium rules with Address Line 1 condition', () => {
+//     maximumDiscreDiscountPage.verify_that_rules_engine_title_is_display()
+//     maximumDiscreDiscountPage.login_into_ui_tenant_from_developers_login()
+//     maximumDiscreDiscountPage.click_on_add_rule_button_to_create_new_rule()
+//     maximumDiscreDiscountPage.select_ukMotors_from_question_set_dropdown()
+//     maximumDiscreDiscountPage.select_maximum_discretionary_discount_from_rule_type_dropdown()
+//     maximumDiscreDiscountPage.set_maximum_discretionary_discount_rule_name()
+//     maximumDiscreDiscountPage.set_maximum_discretionary_discount_value()
+//     maximumDiscreDiscountPage.set_address_line_1_rule_condition_from_conditional_builder_Field1()
+//     maximumDiscreDiscountPage.set_rule_condition_from_conditional_builder_Field2()
+//     maximumDiscreDiscountPage.set_maximum_discretionary_discount_condition_answer_for_address()
+//     maximumDiscreDiscountPage.click_on_save_rule_button()
+// })
